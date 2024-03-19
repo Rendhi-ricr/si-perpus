@@ -6,7 +6,7 @@
 
         <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
             <a class="navbar-brand col-lg-3 me-0" href="#">
-                <img src="../img/logo copy.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-center">
+            <img src="<?= base_url('img/logoperpus.png') ?>" alt="Logo" width="40" height="40" class="d-inline-block align-text-center">
                 Perpustakaan Kelompok 4
             </a>
             <ul class="navbar-nav col-lg-6 justify-content-lg-center">
@@ -21,8 +21,8 @@
                 </li>
 
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <button class="btn btn-light my-2 my-sm-0 login-btn" type="submit">Login</button>
+            <<form class="form-inline my-2 my-lg-0">
+                <button class="btn btn-primary my-2 my-sm-0 login-btn" style="margin-left: 300px;" type="submit">Login</button>
             </form>
         </div>
     </div>
