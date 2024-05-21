@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 19 Apr 2024 pada 04.24
--- Versi server: 10.4.27-MariaDB
--- Versi PHP: 7.4.33
+-- Generation Time: May 21, 2024 at 02:28 PM
+-- Server version: 10.4.27-MariaDB
+-- PHP Version: 7.4.33
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tbl_anggota`
+-- Table structure for table `tbl_anggota`
 --
 
 CREATE TABLE `tbl_anggota` (
@@ -36,17 +36,17 @@ CREATE TABLE `tbl_anggota` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data untuk tabel `tbl_anggota`
+-- Dumping data for table `tbl_anggota`
 --
 
 INSERT INTO `tbl_anggota` (`id_anggota`, `nama_anggota`, `alamat_anggota`, `nis_nisn`, `no_telp_anggota`) VALUES
 (4, 'Rendhi Richardo Ardiansyah', 'Subang', 123421, 2147483647),
-(8, 'Kiki Maulana', 'isadbasd', 123112, 12983123);
+(9, 'Erik Afandi', 'Subang', 2147483647, 1238761923);
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tbl_buku`
+-- Table structure for table `tbl_buku`
 --
 
 CREATE TABLE `tbl_buku` (
@@ -64,7 +64,7 @@ CREATE TABLE `tbl_buku` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data untuk tabel `tbl_buku`
+-- Dumping data for table `tbl_buku`
 --
 
 INSERT INTO `tbl_buku` (`id_buku`, `cover_buku`, `judul`, `pengarang`, `penerbit`, `tahun_terbit`, `ringkasan_buku`, `jumlah_salinan_tersedia`, `tanggal_input_buku`, `id_kategori`, `id_rak`) VALUES
@@ -77,7 +77,7 @@ INSERT INTO `tbl_buku` (`id_buku`, `cover_buku`, `judul`, `pengarang`, `penerbit
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tbl_denda`
+-- Table structure for table `tbl_denda`
 --
 
 CREATE TABLE `tbl_denda` (
@@ -86,16 +86,18 @@ CREATE TABLE `tbl_denda` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data untuk tabel `tbl_denda`
+-- Dumping data for table `tbl_denda`
 --
 
 INSERT INTO `tbl_denda` (`id_denda`, `denda`) VALUES
-(5, 5000);
+(10, 12123),
+(11, 12313),
+(12, 20000);
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tbl_kategori`
+-- Table structure for table `tbl_kategori`
 --
 
 CREATE TABLE `tbl_kategori` (
@@ -104,7 +106,7 @@ CREATE TABLE `tbl_kategori` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data untuk tabel `tbl_kategori`
+-- Dumping data for table `tbl_kategori`
 --
 
 INSERT INTO `tbl_kategori` (`id_kategori`, `nama_kategori`) VALUES
@@ -115,29 +117,35 @@ INSERT INTO `tbl_kategori` (`id_kategori`, `nama_kategori`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tbl_pengembalian`
+-- Table structure for table `tbl_pengembalian`
 --
 
 CREATE TABLE `tbl_pengembalian` (
   `id_pengembalian` int(11) NOT NULL,
   `id_anggota` int(11) NOT NULL,
-  `id_transaksi` int(11) NOT NULL,
+  `id_buku` int(11) NOT NULL,
+  `tanggal_peminjaman` date NOT NULL,
+  `tanggal_pengembalian` date NOT NULL,
   `tanggal_dikembalikan` date NOT NULL,
   `telat` int(11) NOT NULL,
   `id_denda` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data untuk tabel `tbl_pengembalian`
+-- Dumping data for table `tbl_pengembalian`
 --
 
-INSERT INTO `tbl_pengembalian` (`id_pengembalian`, `id_anggota`, `id_transaksi`, `tanggal_dikembalikan`, `telat`, `id_denda`) VALUES
-(1, 1, 1, '2024-03-01', 0, 1);
+INSERT INTO `tbl_pengembalian` (`id_pengembalian`, `id_anggota`, `id_buku`, `tanggal_peminjaman`, `tanggal_pengembalian`, `tanggal_dikembalikan`, `telat`, `id_denda`) VALUES
+(8, 4, 18, '2024-05-01', '2024-05-07', '2024-05-14', 7, 0),
+(9, 9, 19, '2024-05-02', '2024-05-05', '2024-05-14', 9, 0),
+(10, 4, 20, '2024-05-13', '2024-05-14', '2024-05-15', 1, 0),
+(11, 4, 19, '2024-05-13', '2024-05-14', '2024-05-15', 1, 0),
+(12, 9, 18, '2024-05-13', '2024-05-14', '2024-05-15', 1, 0);
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tbl_petugas`
+-- Table structure for table `tbl_petugas`
 --
 
 CREATE TABLE `tbl_petugas` (
@@ -150,7 +158,7 @@ CREATE TABLE `tbl_petugas` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data untuk tabel `tbl_petugas`
+-- Dumping data for table `tbl_petugas`
 --
 
 INSERT INTO `tbl_petugas` (`id_petugas`, `nama_petugas`, `foto_petugas`, `email`, `no_hp`, `password`) VALUES
@@ -159,7 +167,7 @@ INSERT INTO `tbl_petugas` (`id_petugas`, `nama_petugas`, `foto_petugas`, `email`
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tbl_rak`
+-- Table structure for table `tbl_rak`
 --
 
 CREATE TABLE `tbl_rak` (
@@ -168,7 +176,7 @@ CREATE TABLE `tbl_rak` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data untuk tabel `tbl_rak`
+-- Dumping data for table `tbl_rak`
 --
 
 INSERT INTO `tbl_rak` (`id_rak`, `nama_rak`) VALUES
@@ -178,7 +186,7 @@ INSERT INTO `tbl_rak` (`id_rak`, `nama_rak`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tbl_transaksi`
+-- Table structure for table `tbl_transaksi`
 --
 
 CREATE TABLE `tbl_transaksi` (
@@ -190,24 +198,25 @@ CREATE TABLE `tbl_transaksi` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data untuk tabel `tbl_transaksi`
+-- Dumping data for table `tbl_transaksi`
 --
 
 INSERT INTO `tbl_transaksi` (`id_transaksi`, `id_anggota`, `id_buku`, `tanggal_peminjaman`, `tanggal_pengembalian`) VALUES
-(2, 4, 18, '2024-04-10', '2024-04-25');
+(13, 4, 18, '2024-05-15', '2024-05-16'),
+(14, 4, 18, '2024-05-15', '2024-05-14');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indeks untuk tabel `tbl_anggota`
+-- Indexes for table `tbl_anggota`
 --
 ALTER TABLE `tbl_anggota`
   ADD PRIMARY KEY (`id_anggota`);
 
 --
--- Indeks untuk tabel `tbl_buku`
+-- Indexes for table `tbl_buku`
 --
 ALTER TABLE `tbl_buku`
   ADD PRIMARY KEY (`id_buku`),
@@ -216,103 +225,112 @@ ALTER TABLE `tbl_buku`
   ADD KEY `id_kategori` (`id_kategori`);
 
 --
--- Indeks untuk tabel `tbl_denda`
+-- Indexes for table `tbl_denda`
 --
 ALTER TABLE `tbl_denda`
   ADD PRIMARY KEY (`id_denda`);
 
 --
--- Indeks untuk tabel `tbl_kategori`
+-- Indexes for table `tbl_kategori`
 --
 ALTER TABLE `tbl_kategori`
   ADD PRIMARY KEY (`id_kategori`);
 
 --
--- Indeks untuk tabel `tbl_pengembalian`
+-- Indexes for table `tbl_pengembalian`
 --
 ALTER TABLE `tbl_pengembalian`
-  ADD PRIMARY KEY (`id_pengembalian`);
+  ADD PRIMARY KEY (`id_pengembalian`),
+  ADD KEY `id_anggota` (`id_anggota`),
+  ADD KEY `id_buku` (`id_buku`);
 
 --
--- Indeks untuk tabel `tbl_petugas`
+-- Indexes for table `tbl_petugas`
 --
 ALTER TABLE `tbl_petugas`
   ADD PRIMARY KEY (`id_petugas`);
 
 --
--- Indeks untuk tabel `tbl_rak`
+-- Indexes for table `tbl_rak`
 --
 ALTER TABLE `tbl_rak`
   ADD PRIMARY KEY (`id_rak`);
 
 --
--- Indeks untuk tabel `tbl_transaksi`
+-- Indexes for table `tbl_transaksi`
 --
 ALTER TABLE `tbl_transaksi`
   ADD PRIMARY KEY (`id_transaksi`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `tbl_anggota`
+-- AUTO_INCREMENT for table `tbl_anggota`
 --
 ALTER TABLE `tbl_anggota`
-  MODIFY `id_anggota` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id_anggota` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
--- AUTO_INCREMENT untuk tabel `tbl_buku`
+-- AUTO_INCREMENT for table `tbl_buku`
 --
 ALTER TABLE `tbl_buku`
-  MODIFY `id_buku` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
+  MODIFY `id_buku` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 
 --
--- AUTO_INCREMENT untuk tabel `tbl_denda`
+-- AUTO_INCREMENT for table `tbl_denda`
 --
 ALTER TABLE `tbl_denda`
-  MODIFY `id_denda` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id_denda` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
--- AUTO_INCREMENT untuk tabel `tbl_kategori`
+-- AUTO_INCREMENT for table `tbl_kategori`
 --
 ALTER TABLE `tbl_kategori`
-  MODIFY `id_kategori` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id_kategori` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
--- AUTO_INCREMENT untuk tabel `tbl_pengembalian`
+-- AUTO_INCREMENT for table `tbl_pengembalian`
 --
 ALTER TABLE `tbl_pengembalian`
-  MODIFY `id_pengembalian` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_pengembalian` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
--- AUTO_INCREMENT untuk tabel `tbl_petugas`
+-- AUTO_INCREMENT for table `tbl_petugas`
 --
 ALTER TABLE `tbl_petugas`
-  MODIFY `id_petugas` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id_petugas` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
--- AUTO_INCREMENT untuk tabel `tbl_rak`
+-- AUTO_INCREMENT for table `tbl_rak`
 --
 ALTER TABLE `tbl_rak`
-  MODIFY `id_rak` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id_rak` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
--- AUTO_INCREMENT untuk tabel `tbl_transaksi`
+-- AUTO_INCREMENT for table `tbl_transaksi`
 --
 ALTER TABLE `tbl_transaksi`
-  MODIFY `id_transaksi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_transaksi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
--- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
+-- Constraints for dumped tables
 --
 
 --
--- Ketidakleluasaan untuk tabel `tbl_buku`
+-- Constraints for table `tbl_buku`
 --
 ALTER TABLE `tbl_buku`
   ADD CONSTRAINT `tbl_buku_ibfk_1` FOREIGN KEY (`id_kategori`) REFERENCES `tbl_kategori` (`id_kategori`),
   ADD CONSTRAINT `tbl_buku_ibfk_2` FOREIGN KEY (`id_rak`) REFERENCES `tbl_rak` (`id_rak`);
+
+--
+-- Constraints for table `tbl_pengembalian`
+--
+ALTER TABLE `tbl_pengembalian`
+  ADD CONSTRAINT `tbl_pengembalian_ibfk_1` FOREIGN KEY (`id_anggota`) REFERENCES `tbl_anggota` (`id_anggota`),
+  ADD CONSTRAINT `tbl_pengembalian_ibfk_2` FOREIGN KEY (`id_buku`) REFERENCES `tbl_buku` (`id_buku`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
