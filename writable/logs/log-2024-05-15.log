@@ -1,0 +1,13 @@
+INFO - 2024-05-15 11:51:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 11:52:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 11:52:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 11:53:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-05-15 11:56:00 --> ErrorException: Undefined variable: id_buku
+in APPPATH\Controllers\admin\transaksi.php on line 54.
+ 1 APPPATH\Controllers\admin\transaksi.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id_buku', 'C:\\xampp\\htdocs\\si-perpus\\app\\Controllers\\admin\\transaksi.php', 54, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\transaksi->edit('12')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\transaksi))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-15 13:03:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 13:04:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

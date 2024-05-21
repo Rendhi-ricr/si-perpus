@@ -36,4 +36,10 @@ class transaksiModels extends Model
         $query = $this->db->table($this->table)->delete(array('id_transaksi' => $id_transaksi));
         return $query;
     }
+
+    public function savePengembalian($data)
+    {
+        $builder = $this->db->table('tbl_pengembalian');
+        $builder->insert($data);
+    }
 }

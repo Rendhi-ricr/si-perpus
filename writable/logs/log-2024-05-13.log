@@ -1,0 +1,162 @@
+CRITICAL - 2024-05-13 07:16:20 --> Error: Class 'App\Models\pengembalianModels' not found
+in APPPATH\Controllers\admin\pengembalian.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\admin\pengembalian->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-13 07:17:22 --> Error: Class 'App\Models\pengembalianModels' not found
+in APPPATH\Controllers\admin\pengembalian.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\admin\pengembalian->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-13 07:18:22 --> Error: Class 'App\Models\pengembalianModels' not found
+in APPPATH\Controllers\admin\pengembalian.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\admin\pengembalian->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-13 07:18:53 --> Error: Class 'App\Models\PengembalianModel' not found
+in APPPATH\Controllers\admin\pengembalian.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\admin\pengembalian->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-13 07:30:12 --> mysqli_sql_exception: Unknown column 'tbl_transaksi.judul' in 'field list' in C:\xampp\htdocs\si-perpus\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\si-perpus\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_pen...', 0)
+#1 C:\xampp\htdocs\si-perpus\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_pen...')
+#2 C:\xampp\htdocs\si-perpus\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_pen...')
+#3 C:\xampp\htdocs\si-perpus\system\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_pen...', Array, false)
+#4 C:\xampp\htdocs\si-perpus\app\Models\pengembalianModels.php(19): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\si-perpus\app\Controllers\admin\pengembalian.php(23): App\Models\PengembalianModels->getAll()
+#6 C:\xampp\htdocs\si-perpus\system\CodeIgniter.php(941): App\Controllers\admin\pengembalian->index()
+#7 C:\xampp\htdocs\si-perpus\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\pengembalian))
+#8 C:\xampp\htdocs\si-perpus\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\si-perpus\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-05-13 07:30:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tbl_transaksi.judul' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_pengembalian`.*, `tbl_anggota`.`nama_anggota`, `tbl_transaksi`.`judul`, `tbl_transaksi`.`tanggal_peminjaman`, `tbl_transaksi`.`tanggal_pengembalian`
+FROM `tbl_pengembalian`
+JOIN `tbl_anggota` ON `tbl_anggota`.`id_anggota` = `tbl_pengembalian`.`id_anggota`
+JOIN `tbl_transaksi` ON `tbl_transaksi`.`id_transaksi` = `tbl_pengembalian`.`id_transaksi`', [], false)
+ 2 APPPATH\Models\pengembalianModels.php(19): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\admin\pengembalian.php(23): App\Models\PengembalianModels->getAll()
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\pengembalian->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\pengembalian))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-13 07:30:12 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tbl_transaksi.judul' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_pengembalian`.*, `tbl_anggota`.`nama_anggota`, `tbl_transaksi`.`judul`, `tbl_transaksi`.`tanggal_peminjaman`, `tbl_transaksi`.`tanggal_pengembalian`
+FROM `tbl_pengembalian`
+JOIN `tbl_anggota` ON `tbl_anggota`.`id_anggota` = `tbl_pengembalian`.`id_anggota`
+JOIN `tbl_transaksi` ON `tbl_transaksi`.`id_transaksi` = `tbl_pengembalian`.`id_transaksi`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_pengembalian`.*, `tbl_anggota`.`nama_anggota`, `tbl_transaksi`.`judul`, `tbl_transaksi`.`tanggal_peminjaman`, `tbl_transaksi`.`tanggal_pengembalian`
+FROM `tbl_pengembalian`
+JOIN `tbl_anggota` ON `tbl_anggota`.`id_anggota` = `tbl_pengembalian`.`id_anggota`
+JOIN `tbl_transaksi` ON `tbl_transaksi`.`id_transaksi` = `tbl_pengembalian`.`id_transaksi`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_pengembalian`.*, `tbl_anggota`.`nama_anggota`, `tbl_transaksi`.`judul`, `tbl_transaksi`.`tanggal_peminjaman`, `tbl_transaksi`.`tanggal_pengembalian`
+FROM `tbl_pengembalian`
+JOIN `tbl_anggota` ON `tbl_anggota`.`id_anggota` = `tbl_pengembalian`.`id_anggota`
+JOIN `tbl_transaksi` ON `tbl_transaksi`.`id_transaksi` = `tbl_pengembalian`.`id_transaksi`', [], false)
+ 4 APPPATH\Models\pengembalianModels.php(19): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\admin\pengembalian.php(23): App\Models\PengembalianModels->getAll()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\pengembalian->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\pengembalian))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-13 07:30:12 --> [Caused by] mysqli_sql_exception: Unknown column 'tbl_transaksi.judul' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_pengembalian`.*, `tbl_anggota`.`nama_anggota`, `tbl_transaksi`.`judul`, `tbl_transaksi`.`tanggal_peminjaman`, `tbl_transaksi`.`tanggal_pengembalian`
+FROM `tbl_pengembalian`
+JOIN `tbl_anggota` ON `tbl_anggota`.`id_anggota` = `tbl_pengembalian`.`id_anggota`
+JOIN `tbl_transaksi` ON `tbl_transaksi`.`id_transaksi` = `tbl_pengembalian`.`id_transaksi`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_pengembalian`.*, `tbl_anggota`.`nama_anggota`, `tbl_transaksi`.`judul`, `tbl_transaksi`.`tanggal_peminjaman`, `tbl_transaksi`.`tanggal_pengembalian`
+FROM `tbl_pengembalian`
+JOIN `tbl_anggota` ON `tbl_anggota`.`id_anggota` = `tbl_pengembalian`.`id_anggota`
+JOIN `tbl_transaksi` ON `tbl_transaksi`.`id_transaksi` = `tbl_pengembalian`.`id_transaksi`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_pengembalian`.*, `tbl_anggota`.`nama_anggota`, `tbl_transaksi`.`judul`, `tbl_transaksi`.`tanggal_peminjaman`, `tbl_transaksi`.`tanggal_pengembalian`
+FROM `tbl_pengembalian`
+JOIN `tbl_anggota` ON `tbl_anggota`.`id_anggota` = `tbl_pengembalian`.`id_anggota`
+JOIN `tbl_transaksi` ON `tbl_transaksi`.`id_transaksi` = `tbl_pengembalian`.`id_transaksi`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_pengembalian`.*, `tbl_anggota`.`nama_anggota`, `tbl_transaksi`.`judul`, `tbl_transaksi`.`tanggal_peminjaman`, `tbl_transaksi`.`tanggal_pengembalian`
+FROM `tbl_pengembalian`
+JOIN `tbl_anggota` ON `tbl_anggota`.`id_anggota` = `tbl_pengembalian`.`id_anggota`
+JOIN `tbl_transaksi` ON `tbl_transaksi`.`id_transaksi` = `tbl_pengembalian`.`id_transaksi`', [], false)
+ 5 APPPATH\Models\pengembalianModels.php(19): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\admin\pengembalian.php(23): App\Models\PengembalianModels->getAll()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\pengembalian->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\pengembalian))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-13 07:31:14 --> mysqli_sql_exception: Unknown column 'tbl_transaksi.judul' in 'field list' in C:\xampp\htdocs\si-perpus\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\si-perpus\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_pen...', 0)
+#1 C:\xampp\htdocs\si-perpus\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_pen...')
+#2 C:\xampp\htdocs\si-perpus\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_pen...')
+#3 C:\xampp\htdocs\si-perpus\system\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_pen...', Array, false)
+#4 C:\xampp\htdocs\si-perpus\app\Models\pengembalianModels.php(19): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\si-perpus\app\Controllers\admin\pengembalian.php(23): App\Models\PengembalianModels->getAll()
+#6 C:\xampp\htdocs\si-perpus\system\CodeIgniter.php(941): App\Controllers\admin\pengembalian->index()
+#7 C:\xampp\htdocs\si-perpus\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\pengembalian))
+#8 C:\xampp\htdocs\si-perpus\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\si-perpus\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-05-13 07:31:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tbl_transaksi.judul' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_pengembalian`.*, `tbl_anggota`.`nama_anggota`, `tbl_transaksi`.`judul`, `tbl_transaksi`.`tanggal_peminjaman`, `tbl_transaksi`.`tanggal_pengembalian`
+FROM `tbl_pengembalian`
+JOIN `tbl_anggota` ON `tbl_anggota`.`id_anggota` = `tbl_pengembalian`.`id_anggota`
+JOIN `tbl_transaksi` ON `tbl_transaksi`.`id_transaksi` = `tbl_pengembalian`.`id_transaksi`', [], false)
+ 2 APPPATH\Models\pengembalianModels.php(19): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\admin\pengembalian.php(23): App\Models\PengembalianModels->getAll()
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\pengembalian->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\pengembalian))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-13 07:31:14 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tbl_transaksi.judul' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_pengembalian`.*, `tbl_anggota`.`nama_anggota`, `tbl_transaksi`.`judul`, `tbl_transaksi`.`tanggal_peminjaman`, `tbl_transaksi`.`tanggal_pengembalian`
+FROM `tbl_pengembalian`
+JOIN `tbl_anggota` ON `tbl_anggota`.`id_anggota` = `tbl_pengembalian`.`id_anggota`
+JOIN `tbl_transaksi` ON `tbl_transaksi`.`id_transaksi` = `tbl_pengembalian`.`id_transaksi`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_pengembalian`.*, `tbl_anggota`.`nama_anggota`, `tbl_transaksi`.`judul`, `tbl_transaksi`.`tanggal_peminjaman`, `tbl_transaksi`.`tanggal_pengembalian`
+FROM `tbl_pengembalian`
+JOIN `tbl_anggota` ON `tbl_anggota`.`id_anggota` = `tbl_pengembalian`.`id_anggota`
+JOIN `tbl_transaksi` ON `tbl_transaksi`.`id_transaksi` = `tbl_pengembalian`.`id_transaksi`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_pengembalian`.*, `tbl_anggota`.`nama_anggota`, `tbl_transaksi`.`judul`, `tbl_transaksi`.`tanggal_peminjaman`, `tbl_transaksi`.`tanggal_pengembalian`
+FROM `tbl_pengembalian`
+JOIN `tbl_anggota` ON `tbl_anggota`.`id_anggota` = `tbl_pengembalian`.`id_anggota`
+JOIN `tbl_transaksi` ON `tbl_transaksi`.`id_transaksi` = `tbl_pengembalian`.`id_transaksi`', [], false)
+ 4 APPPATH\Models\pengembalianModels.php(19): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\admin\pengembalian.php(23): App\Models\PengembalianModels->getAll()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\pengembalian->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\pengembalian))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-13 07:31:14 --> [Caused by] mysqli_sql_exception: Unknown column 'tbl_transaksi.judul' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_pengembalian`.*, `tbl_anggota`.`nama_anggota`, `tbl_transaksi`.`judul`, `tbl_transaksi`.`tanggal_peminjaman`, `tbl_transaksi`.`tanggal_pengembalian`
+FROM `tbl_pengembalian`
+JOIN `tbl_anggota` ON `tbl_anggota`.`id_anggota` = `tbl_pengembalian`.`id_anggota`
+JOIN `tbl_transaksi` ON `tbl_transaksi`.`id_transaksi` = `tbl_pengembalian`.`id_transaksi`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_pengembalian`.*, `tbl_anggota`.`nama_anggota`, `tbl_transaksi`.`judul`, `tbl_transaksi`.`tanggal_peminjaman`, `tbl_transaksi`.`tanggal_pengembalian`
+FROM `tbl_pengembalian`
+JOIN `tbl_anggota` ON `tbl_anggota`.`id_anggota` = `tbl_pengembalian`.`id_anggota`
+JOIN `tbl_transaksi` ON `tbl_transaksi`.`id_transaksi` = `tbl_pengembalian`.`id_transaksi`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_pengembalian`.*, `tbl_anggota`.`nama_anggota`, `tbl_transaksi`.`judul`, `tbl_transaksi`.`tanggal_peminjaman`, `tbl_transaksi`.`tanggal_pengembalian`
+FROM `tbl_pengembalian`
+JOIN `tbl_anggota` ON `tbl_anggota`.`id_anggota` = `tbl_pengembalian`.`id_anggota`
+JOIN `tbl_transaksi` ON `tbl_transaksi`.`id_transaksi` = `tbl_pengembalian`.`id_transaksi`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_pengembalian`.*, `tbl_anggota`.`nama_anggota`, `tbl_transaksi`.`judul`, `tbl_transaksi`.`tanggal_peminjaman`, `tbl_transaksi`.`tanggal_pengembalian`
+FROM `tbl_pengembalian`
+JOIN `tbl_anggota` ON `tbl_anggota`.`id_anggota` = `tbl_pengembalian`.`id_anggota`
+JOIN `tbl_transaksi` ON `tbl_transaksi`.`id_transaksi` = `tbl_pengembalian`.`id_transaksi`', [], false)
+ 5 APPPATH\Models\pengembalianModels.php(19): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\admin\pengembalian.php(23): App\Models\PengembalianModels->getAll()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\pengembalian->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\pengembalian))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

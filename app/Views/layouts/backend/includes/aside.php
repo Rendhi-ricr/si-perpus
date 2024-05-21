@@ -70,7 +70,7 @@
 
                 <a class="collapse-item" href="<?= base_url('admin/transaksi') ?>">
                     Transaksi</a>
-                <a class="collapse-item" href="<?= base_url('admin/kategori') ?>">Histori Transaksi</a>
+                <a class="collapse-item" href="<?= base_url('admin/pengembalian') ?>">Histori Transaksi</a>
             </div>
         </div>
     </li>

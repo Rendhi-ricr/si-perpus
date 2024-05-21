@@ -4,13 +4,12 @@
 
 <div class="container-fluid">
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Data Transaksi</h1>
+        <h1 class="h3 mb-0 text-gray-800">Data Pengembalian</h1>
     </div>
-    <a href="transaksi/tambah" class="btn btn-primary btn-sm my-4"><i class="bx bx-plus"></i> Tambah Data</a>
 </div>
 <div class="card shadow mb-4">
     <div class="card-header py-3">
-        <h6 class="m-0 font-weight-bold text-primary">Daftar Transaksi</h6>
+        <h6 class="m-0 font-weight-bold text-primary">Daftar Pengembalian</h6>
     </div>
     <div class="card-body">
         <div class="table-responsive">
@@ -22,26 +21,27 @@
                         <th>Judul</th>
                         <th>Tanggal Peminjaman</th>
                         <th>Tanggal Pengembalian</th>
-                        <th>Aksi</th>
+                        <th>Tanggal Dikembalikan</th>
+                        <th>Telat</th>
+
                     </tr>
                 </thead>
                 <tbody>
                     <?php
                     $no = 1;
-                    foreach ($transaksi as $key => $value) : ?>
+                    foreach ($pengembalian as $key => $value) : ?>
                         <tr>
                             <td><?= $no++; ?></td>
                             <td><?= $value->nama_anggota ?>
+                            <td><?= $value->judul ?>
+                            <td><?= $value->tanggal_peminjaman ?>
+                            <td><?= $value->tanggal_pengembalian ?>
+                            <td><?= $value->tanggal_dikembalikan ?></td>
+                            <td><?= $value->telat ?> Hari</td>
 
-                            <td><?= $value->judul ?></td>
-                            <td><?= $value->tanggal_peminjaman ?></td>
-                            <td><?= $value->tanggal_pengembalian ?></td>
-                            <td>
-                                <a href="transaksi/edit/<?= $value->id_transaksi ?>" class="btn btn-warning btn-sm">Edit</a>
-                                <a href="transaksi/selesai/<?= $value->id_transaksi ?>" class="btn btn-success btn-sm" onclick="return confirm('Apakah Buku Sudah Dikembalikan?')">Selesai</a>
-                            </td>
                         </tr>
                     <?php endforeach; ?>
+
                 </tbody>
             </table>
         </div>

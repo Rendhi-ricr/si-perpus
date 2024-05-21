@@ -6,16 +6,18 @@ use App\Controllers\BaseController;
 use App\Models\transaksiModels;
 use App\Models\anggotaModels;
 use App\Models\bukuModels;
+use App\Models\pengembalianModels;
 
 class transaksi extends BaseController
 {
-    protected $transaksiModels, $anggotaModels, $bukuModels;
+    protected $transaksiModels, $anggotaModels, $bukuModels, $pengembalianModels;
 
     public function __construct()
     {
         $this->transaksi = new transaksiModels();
         $this->anggota = new anggotaModels();
         $this->buku = new bukuModels();
+        $this->pengembalian = new pengembalianModels();
     }
 
     public function index()
@@ -76,17 +78,31 @@ class transaksi extends BaseController
         return redirect()->to('admin/transaksi');
     }
 
-
-    public function delete($id_transaksi)
+    public function selesai($id_transaksi)
     {
+        // Ambil data transaksi berdasarkan id_transaksi
+        $transaksi = $this->transaksi->find($id_transaksi);
+        if ($transaksi) {
+            $tanggal_dikembalikan = date('Y-m-d'); // Atau ambil dari input form jika diperlukan
+            $telat = (strtotime($tanggal_dikembalikan) > strtotime($transaksi['tanggal_pengembalian'])) ? (strtotime($tanggal_dikembalikan) - strtotime($transaksi['tanggal_pengembalian'])) / (60 * 60 * 24) : 0;
 
+            // Simpan data ke tabel pengembalian
+            $this->pengembalian->save([
+                'id_anggota' => $transaksi['id_anggota'],
+                'id_buku' => $transaksi['id_buku'],
+                'tanggal_peminjaman' => $transaksi['tanggal_peminjaman'],
+                'tanggal_pengembalian' => $transaksi['tanggal_pengembalian'],
+                'tanggal_dikembalikan' => $tanggal_dikembalikan,
+                'telat' => $telat,
+            ]);
 
+            // Hapus data dari tabel transaksi
+            $this->transaksi->delete($id_transaksi);
 
-
-        // penghapusan database
-        $this->transaksi->delete_data($id_transaksi);
-
-        // mengakses halaman berita
-        return redirect()->to('admin/transaksi');
+            // Redirect kembali ke halaman transaksi dengan pesan sukses
+            return redirect()->to('admin/transaksi')->with('success', 'Transaksi selesai dan dipindahkan ke tabel pengembalian.');
+        } else {
+            return redirect()->to('admin/transaksi')->with('error', 'Transaksi tidak ditemukan.');
+        }
     }
 }
