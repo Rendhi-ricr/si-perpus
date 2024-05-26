@@ -17,6 +17,7 @@
     <link href="<?php echo (base_url()) ?>vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
     <!-- Custom styles for this template-->
     <link href="<?php echo (base_url()) ?>css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
 
 </head>
 
@@ -77,6 +78,16 @@
     <script src="<?php echo (base_url()) ?>js/demo/datatables-demo.js"></script>
     <script src="<?php echo (base_url()) ?>vendor/datatables/jquery.dataTables.min.js"></script>
     <script src="<?php echo (base_url()) ?>vendor/datatables/dataTables.bootstrap4.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.select2').select2({
+                placeholder: 'Cari...',
+                allowClear: true
+            });
+        });
+    </script>
 
 </body>
 

@@ -8,23 +8,16 @@ class userModels extends Model
 {
     protected $table = 'tbl_user';
     protected $primaryKey = 'id_user';
-    protected $allowedFields = ['nama', 'email', 'no_telp', 'password', 'foto', 'level'];
+    protected $allowedFields = ['username', 'password', 'role'];
 
-    public function data_user($id_user)
+
+    public function getUser($username)
     {
-        return $this->find($id_user);
+        return $this->where('username', $username)->first();
     }
-    public function update_data($data, $id_user)
+
+    public function countUsers()
     {
-        $query = $this->db->table($this->table)->update(
-            $data,
-            array('id_user' => $id_user)
-        );
-        return $query;
-    }
-    public function delete_data($id_user)
-    {
-        $query = $this->db->table($this->table)->delete(array('id_user' => $id_user));
-        return $query;
+        return $this->countAllResults();
     }
 }

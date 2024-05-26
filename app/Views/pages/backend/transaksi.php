@@ -1,12 +1,12 @@
 <?= $this->extend('layouts/backend/base_layouts') ?>
-<?= $this->section('title'); ?>Data Trasaksi <?= $this->endSection() ?>
+<?= $this->section('title'); ?>Data Transaksi <?= $this->endSection() ?>
 <?= $this->section('content') ?>
 
 <div class="container-fluid">
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
         <h1 class="h3 mb-0 text-gray-800">Data Transaksi</h1>
     </div>
-    <a href="transaksi/tambah" class="btn btn-primary btn-sm my-4"><i class="bx bx-plus"></i> Tambah Data</a>
+    <a href="<?= base_url('admin/transaksi/tambah'); ?>" class="btn btn-primary btn-sm my-4"><i class="bx bx-plus"></i> Tambah Data</a>
 </div>
 <div class="card shadow mb-4">
     <div class="card-header py-3">
@@ -19,9 +19,7 @@
                     <tr>
                         <th>No</th>
                         <th>Nama Anggota</th>
-                        <th>Judul</th>
-                        <th>Tanggal Peminjaman</th>
-                        <th>Tanggal Pengembalian</th>
+                        <th>Status</th>
                         <th>Aksi</th>
                     </tr>
                 </thead>
@@ -31,14 +29,16 @@
                     foreach ($transaksi as $key => $value) : ?>
                         <tr>
                             <td><?= $no++; ?></td>
-                            <td><?= $value->nama_anggota ?>
-
-                            <td><?= $value->judul ?></td>
-                            <td><?= $value->tanggal_peminjaman ?></td>
-                            <td><?= $value->tanggal_pengembalian ?></td>
+                            <td><?= $value->nama_anggota ?></td>
                             <td>
-                                <a href="transaksi/edit/<?= $value->id_transaksi ?>" class="btn btn-warning btn-sm">Edit</a>
-                                <a href="transaksi/selesai/<?= $value->id_transaksi ?>" class="btn btn-success btn-sm" onclick="return confirm('Apakah Buku Sudah Dikembalikan?')">Selesai</a>
+                                <?php if ($value->status === 'selesai') : ?>
+                                    <span class="badge badge-success">Selesai</span>
+                                <?php else : ?>
+                                    <span class="badge badge-warning">Belum Selesai</span>
+                                <?php endif; ?>
+                            </td>
+                            <td>
+                                <a href="<?= base_url('admin/transaksi/detail/' . $value->id_transaksi) ?>" class="btn btn-info btn-sm">Details</a>
                             </td>
                         </tr>
                     <?php endforeach; ?>
@@ -47,7 +47,5 @@
         </div>
     </div>
 </div>
-
-
 
 <?= $this->endSection() ?>

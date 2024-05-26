@@ -1,0 +1,577 @@
+CRITICAL - 2024-05-21 12:44:34 --> ErrorException: Undefined property: stdClass::$judul
+in APPPATH\Views\pages\backend\transaksi.php on line 36.
+ 1 APPPATH\Views\pages\backend\transaksi.php(36): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$judul', 'C:\\xampp\\htdocs\\si-perpus\\app\\Views\\pages\\backend\\transaksi.php', 36, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\si-perpus\\app\\Views\\pages\\backend\\transaksi.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/backend/transaksi', [], true)
+ 5 APPPATH\Controllers\admin\transaksi.php(26): view('pages/backend/transaksi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\transaksi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-21 12:44:41 --> ErrorException: Undefined index: judul_buku
+in APPPATH\Views\pages\backend\transaksi\tambah.php on line 17.
+ 1 APPPATH\Views\pages\backend\transaksi\tambah.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: judul_buku', 'C:\\xampp\\htdocs\\si-perpus\\app\\Views\\pages\\backend\\transaksi\\tambah.php', 17, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\si-perpus\\app\\Views\\pages\\backend\\transaksi\\tambah.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/backend/transaksi/tambah', [], true)
+ 5 APPPATH\Controllers\admin\transaksi.php(35): view('pages/backend/transaksi/tambah', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\transaksi->tambah()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-21 12:50:53 --> ErrorException: Undefined property: stdClass::$judul
+in APPPATH\Views\pages\backend\transaksi.php on line 36.
+ 1 APPPATH\Views\pages\backend\transaksi.php(36): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$judul', 'C:\\xampp\\htdocs\\si-perpus\\app\\Views\\pages\\backend\\transaksi.php', 36, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\si-perpus\\app\\Views\\pages\\backend\\transaksi.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/backend/transaksi', [], true)
+ 5 APPPATH\Controllers\admin\transaksi.php(26): view('pages/backend/transaksi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\transaksi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-21 14:26:56 --> ErrorException: Undefined property: stdClass::$judul
+in APPPATH\Views\pages\backend\transaksi.php on line 36.
+ 1 APPPATH\Views\pages\backend\transaksi.php(36): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$judul', 'C:\\xampp\\htdocs\\si-perpus\\app\\Views\\pages\\backend\\transaksi.php', 36, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\si-perpus\\app\\Views\\pages\\backend\\transaksi.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/backend/transaksi', [], true)
+ 5 APPPATH\Controllers\admin\transaksi.php(26): view('pages/backend/transaksi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\transaksi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-21 19:11:20 --> ErrorException: Undefined property: stdClass::$judul
+in APPPATH\Views\pages\backend\transaksi.php on line 35.
+ 1 APPPATH\Views\pages\backend\transaksi.php(35): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$judul', 'C:\\xampp\\htdocs\\si-perpus\\app\\Views\\pages\\backend\\transaksi.php', 35, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\si-perpus\\app\\Views\\pages\\backend\\transaksi.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/backend/transaksi', [], true)
+ 5 APPPATH\Controllers\admin\transaksi.php(26): view('pages/backend/transaksi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\transaksi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-21 19:15:39 --> mysqli_sql_exception: Unknown column 'tbl_buku.judul_buku' in 'field list' in C:\xampp\htdocs\si-perpus\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\si-perpus\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_tra...', 0)
+#1 C:\xampp\htdocs\si-perpus\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_tra...')
+#2 C:\xampp\htdocs\si-perpus\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_tra...')
+#3 C:\xampp\htdocs\si-perpus\system\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_tra...', Array, false)
+#4 C:\xampp\htdocs\si-perpus\app\Models\transaksiModels.php(49): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\si-perpus\app\Controllers\admin\transaksi.php(25): App\Models\transaksiModels->getTransaksiWithDetails()
+#6 C:\xampp\htdocs\si-perpus\system\CodeIgniter.php(941): App\Controllers\admin\transaksi->index()
+#7 C:\xampp\htdocs\si-perpus\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\transaksi))
+#8 C:\xampp\htdocs\si-perpus\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\si-perpus\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-05-21 19:15:39 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tbl_buku.judul_buku' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_transaksi`.*, `tbl_anggota`.`nama_anggota`, GROUP_CONCAT(tbl_buku.judul_buku SEPARATOR ", ") as buku_dipinjam
+FROM `tbl_transaksi`
+JOIN `tbl_anggota` ON `tbl_anggota`.`id_anggota` = `tbl_transaksi`.`id_anggota`
+LEFT JOIN `tbl_detail_transaksi` ON `tbl_detail_transaksi`.`id_transaksi` = `tbl_transaksi`.`id_transaksi`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`id_buku` = `tbl_detail_transaksi`.`id_buku`
+GROUP BY `tbl_transaksi`.`id_transaksi`', [], false)
+ 2 APPPATH\Models\transaksiModels.php(49): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\admin\transaksi.php(25): App\Models\transaksiModels->getTransaksiWithDetails()
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\transaksi->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\transaksi))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-21 19:15:39 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tbl_buku.judul_buku' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_transaksi`.*, `tbl_anggota`.`nama_anggota`, GROUP_CONCAT(tbl_buku.judul_buku SEPARATOR ", ") as buku_dipinjam
+FROM `tbl_transaksi`
+JOIN `tbl_anggota` ON `tbl_anggota`.`id_anggota` = `tbl_transaksi`.`id_anggota`
+LEFT JOIN `tbl_detail_transaksi` ON `tbl_detail_transaksi`.`id_transaksi` = `tbl_transaksi`.`id_transaksi`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`id_buku` = `tbl_detail_transaksi`.`id_buku`
+GROUP BY `tbl_transaksi`.`id_transaksi`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_transaksi`.*, `tbl_anggota`.`nama_anggota`, GROUP_CONCAT(tbl_buku.judul_buku SEPARATOR ", ") as buku_dipinjam
+FROM `tbl_transaksi`
+JOIN `tbl_anggota` ON `tbl_anggota`.`id_anggota` = `tbl_transaksi`.`id_anggota`
+LEFT JOIN `tbl_detail_transaksi` ON `tbl_detail_transaksi`.`id_transaksi` = `tbl_transaksi`.`id_transaksi`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`id_buku` = `tbl_detail_transaksi`.`id_buku`
+GROUP BY `tbl_transaksi`.`id_transaksi`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_transaksi`.*, `tbl_anggota`.`nama_anggota`, GROUP_CONCAT(tbl_buku.judul_buku SEPARATOR ", ") as buku_dipinjam
+FROM `tbl_transaksi`
+JOIN `tbl_anggota` ON `tbl_anggota`.`id_anggota` = `tbl_transaksi`.`id_anggota`
+LEFT JOIN `tbl_detail_transaksi` ON `tbl_detail_transaksi`.`id_transaksi` = `tbl_transaksi`.`id_transaksi`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`id_buku` = `tbl_detail_transaksi`.`id_buku`
+GROUP BY `tbl_transaksi`.`id_transaksi`', [], false)
+ 4 APPPATH\Models\transaksiModels.php(49): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\admin\transaksi.php(25): App\Models\transaksiModels->getTransaksiWithDetails()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\transaksi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-21 19:15:39 --> [Caused by] mysqli_sql_exception: Unknown column 'tbl_buku.judul_buku' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_transaksi`.*, `tbl_anggota`.`nama_anggota`, GROUP_CONCAT(tbl_buku.judul_buku SEPARATOR ", ") as buku_dipinjam
+FROM `tbl_transaksi`
+JOIN `tbl_anggota` ON `tbl_anggota`.`id_anggota` = `tbl_transaksi`.`id_anggota`
+LEFT JOIN `tbl_detail_transaksi` ON `tbl_detail_transaksi`.`id_transaksi` = `tbl_transaksi`.`id_transaksi`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`id_buku` = `tbl_detail_transaksi`.`id_buku`
+GROUP BY `tbl_transaksi`.`id_transaksi`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_transaksi`.*, `tbl_anggota`.`nama_anggota`, GROUP_CONCAT(tbl_buku.judul_buku SEPARATOR ", ") as buku_dipinjam
+FROM `tbl_transaksi`
+JOIN `tbl_anggota` ON `tbl_anggota`.`id_anggota` = `tbl_transaksi`.`id_anggota`
+LEFT JOIN `tbl_detail_transaksi` ON `tbl_detail_transaksi`.`id_transaksi` = `tbl_transaksi`.`id_transaksi`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`id_buku` = `tbl_detail_transaksi`.`id_buku`
+GROUP BY `tbl_transaksi`.`id_transaksi`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_transaksi`.*, `tbl_anggota`.`nama_anggota`, GROUP_CONCAT(tbl_buku.judul_buku SEPARATOR ", ") as buku_dipinjam
+FROM `tbl_transaksi`
+JOIN `tbl_anggota` ON `tbl_anggota`.`id_anggota` = `tbl_transaksi`.`id_anggota`
+LEFT JOIN `tbl_detail_transaksi` ON `tbl_detail_transaksi`.`id_transaksi` = `tbl_transaksi`.`id_transaksi`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`id_buku` = `tbl_detail_transaksi`.`id_buku`
+GROUP BY `tbl_transaksi`.`id_transaksi`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_transaksi`.*, `tbl_anggota`.`nama_anggota`, GROUP_CONCAT(tbl_buku.judul_buku SEPARATOR ", ") as buku_dipinjam
+FROM `tbl_transaksi`
+JOIN `tbl_anggota` ON `tbl_anggota`.`id_anggota` = `tbl_transaksi`.`id_anggota`
+LEFT JOIN `tbl_detail_transaksi` ON `tbl_detail_transaksi`.`id_transaksi` = `tbl_transaksi`.`id_transaksi`
+LEFT JOIN `tbl_buku` ON `tbl_buku`.`id_buku` = `tbl_detail_transaksi`.`id_buku`
+GROUP BY `tbl_transaksi`.`id_transaksi`', [], false)
+ 5 APPPATH\Models\transaksiModels.php(49): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\admin\transaksi.php(25): App\Models\transaksiModels->getTransaksiWithDetails()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\transaksi->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\transaksi))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-21 19:17:15 --> ErrorException: Undefined property: stdClass::$judul
+in APPPATH\Views\pages\backend\transaksi.php on line 35.
+ 1 APPPATH\Views\pages\backend\transaksi.php(35): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$judul', 'C:\\xampp\\htdocs\\si-perpus\\app\\Views\\pages\\backend\\transaksi.php', 35, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\si-perpus\\app\\Views\\pages\\backend\\transaksi.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/backend/transaksi', [], true)
+ 5 APPPATH\Controllers\admin\transaksi.php(26): view('pages/backend/transaksi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\transaksi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-21 19:33:53 --> RuntimeException: View themes, no current section.
+in SYSTEMPATH\View\View.php on line 425.
+ 1 APPPATH\Views\pages\backend\transaksi.php(53): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\si-perpus\\app\\Views\\pages\\backend\\transaksi.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/backend/transaksi', [], true)
+ 5 APPPATH\Controllers\admin\transaksi.php(26): view('pages/backend/transaksi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\transaksi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-21 19:34:21 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pages/backend/transaksi/detail.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/backend/transaksi/detail.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/backend/transaksi/detail', [], true)
+ 3 APPPATH\Controllers\admin\transaksi.php(153): view('pages/backend/transaksi/detail', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\transaksi->detail('16')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\transaksi))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-21 19:41:04 --> mysqli_sql_exception: Table 'perpustakaan.buku' doesn't exist in C:\xampp\htdocs\si-perpus\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\si-perpus\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `buku`.`...', 0)
+#1 C:\xampp\htdocs\si-perpus\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `buku`.`...')
+#2 C:\xampp\htdocs\si-perpus\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `buku`.`...')
+#3 C:\xampp\htdocs\si-perpus\system\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `buku`.`...', Array, false)
+#4 C:\xampp\htdocs\si-perpus\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\si-perpus\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\si-perpus\app\Models\transaksiModels.php(64): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\si-perpus\app\Controllers\admin\transaksi.php(144): App\Models\detailTransaksiModels->getDetailByTransaksi('16')
+#8 C:\xampp\htdocs\si-perpus\system\CodeIgniter.php(941): App\Controllers\admin\transaksi->detail('16')
+#9 C:\xampp\htdocs\si-perpus\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\transaksi))
+#10 C:\xampp\htdocs\si-perpus\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\si-perpus\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-05-21 19:41:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'perpustakaan.buku' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `buku`.`judul`, `detail_transaksi`.`tanggal_peminjaman`, `detail_transaksi`.`tanggal_pengembalian`
+FROM `tbl_detail_transaksi`
+JOIN `buku` ON `buku`.`id_buku` = `detail_transaksi`.`id_buku`
+WHERE `id_transaksi` = :id_transaksi:', [...], false)
+ 2 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\transaksiModels.php(64): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\admin\transaksi.php(144): App\Models\detailTransaksiModels->getDetailByTransaksi('16')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\transaksi->detail('16')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-21 19:41:04 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'perpustakaan.buku' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `buku`.`judul`, `detail_transaksi`.`tanggal_peminjaman`, `detail_transaksi`.`tanggal_pengembalian`
+FROM `tbl_detail_transaksi`
+JOIN `buku` ON `buku`.`id_buku` = `detail_transaksi`.`id_buku`
+WHERE `id_transaksi` = \'16\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `buku`.`judul`, `detail_transaksi`.`tanggal_peminjaman`, `detail_transaksi`.`tanggal_pengembalian`
+FROM `tbl_detail_transaksi`
+JOIN `buku` ON `buku`.`id_buku` = `detail_transaksi`.`id_buku`
+WHERE `id_transaksi` = \'16\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `buku`.`judul`, `detail_transaksi`.`tanggal_peminjaman`, `detail_transaksi`.`tanggal_pengembalian`
+FROM `tbl_detail_transaksi`
+JOIN `buku` ON `buku`.`id_buku` = `detail_transaksi`.`id_buku`
+WHERE `id_transaksi` = :id_transaksi:', [...], false)
+ 4 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\transaksiModels.php(64): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\admin\transaksi.php(144): App\Models\detailTransaksiModels->getDetailByTransaksi('16')
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\transaksi->detail('16')
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\transaksi))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-21 19:41:04 --> [Caused by] mysqli_sql_exception: Table 'perpustakaan.buku' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `buku`.`judul`, `detail_transaksi`.`tanggal_peminjaman`, `detail_transaksi`.`tanggal_pengembalian`
+FROM `tbl_detail_transaksi`
+JOIN `buku` ON `buku`.`id_buku` = `detail_transaksi`.`id_buku`
+WHERE `id_transaksi` = \'16\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `buku`.`judul`, `detail_transaksi`.`tanggal_peminjaman`, `detail_transaksi`.`tanggal_pengembalian`
+FROM `tbl_detail_transaksi`
+JOIN `buku` ON `buku`.`id_buku` = `detail_transaksi`.`id_buku`
+WHERE `id_transaksi` = \'16\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `buku`.`judul`, `detail_transaksi`.`tanggal_peminjaman`, `detail_transaksi`.`tanggal_pengembalian`
+FROM `tbl_detail_transaksi`
+JOIN `buku` ON `buku`.`id_buku` = `detail_transaksi`.`id_buku`
+WHERE `id_transaksi` = \'16\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `buku`.`judul`, `detail_transaksi`.`tanggal_peminjaman`, `detail_transaksi`.`tanggal_pengembalian`
+FROM `tbl_detail_transaksi`
+JOIN `buku` ON `buku`.`id_buku` = `detail_transaksi`.`id_buku`
+WHERE `id_transaksi` = :id_transaksi:', [...], false)
+ 5 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\transaksiModels.php(64): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\admin\transaksi.php(144): App\Models\detailTransaksiModels->getDetailByTransaksi('16')
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\transaksi->detail('16')
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\transaksi))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-21 19:41:30 --> mysqli_sql_exception: Unknown column 'detail_transaksi.tanggal_peminjaman' in 'field list' in C:\xampp\htdocs\si-perpus\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\si-perpus\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_buk...', 0)
+#1 C:\xampp\htdocs\si-perpus\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_buk...')
+#2 C:\xampp\htdocs\si-perpus\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_buk...')
+#3 C:\xampp\htdocs\si-perpus\system\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_buk...', Array, false)
+#4 C:\xampp\htdocs\si-perpus\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\si-perpus\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\si-perpus\app\Models\transaksiModels.php(64): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\si-perpus\app\Controllers\admin\transaksi.php(144): App\Models\detailTransaksiModels->getDetailByTransaksi('16')
+#8 C:\xampp\htdocs\si-perpus\system\CodeIgniter.php(941): App\Controllers\admin\transaksi->detail('16')
+#9 C:\xampp\htdocs\si-perpus\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\transaksi))
+#10 C:\xampp\htdocs\si-perpus\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\si-perpus\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-05-21 19:41:30 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'detail_transaksi.tanggal_peminjaman' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_buku`.`judul`, `detail_transaksi`.`tanggal_peminjaman`, `detail_transaksi`.`tanggal_pengembalian`
+FROM `tbl_detail_transaksi`
+JOIN `tbl_buku` ON `tbl_buku`.`id_buku` = `detail_transaksi`.`id_buku`
+WHERE `id_transaksi` = :id_transaksi:', [...], false)
+ 2 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\transaksiModels.php(64): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\admin\transaksi.php(144): App\Models\detailTransaksiModels->getDetailByTransaksi('16')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\transaksi->detail('16')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-21 19:41:30 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'detail_transaksi.tanggal_peminjaman' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_buku`.`judul`, `detail_transaksi`.`tanggal_peminjaman`, `detail_transaksi`.`tanggal_pengembalian`
+FROM `tbl_detail_transaksi`
+JOIN `tbl_buku` ON `tbl_buku`.`id_buku` = `detail_transaksi`.`id_buku`
+WHERE `id_transaksi` = \'16\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_buku`.`judul`, `detail_transaksi`.`tanggal_peminjaman`, `detail_transaksi`.`tanggal_pengembalian`
+FROM `tbl_detail_transaksi`
+JOIN `tbl_buku` ON `tbl_buku`.`id_buku` = `detail_transaksi`.`id_buku`
+WHERE `id_transaksi` = \'16\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_buku`.`judul`, `detail_transaksi`.`tanggal_peminjaman`, `detail_transaksi`.`tanggal_pengembalian`
+FROM `tbl_detail_transaksi`
+JOIN `tbl_buku` ON `tbl_buku`.`id_buku` = `detail_transaksi`.`id_buku`
+WHERE `id_transaksi` = :id_transaksi:', [...], false)
+ 4 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\transaksiModels.php(64): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\admin\transaksi.php(144): App\Models\detailTransaksiModels->getDetailByTransaksi('16')
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\transaksi->detail('16')
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\transaksi))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-21 19:41:30 --> [Caused by] mysqli_sql_exception: Unknown column 'detail_transaksi.tanggal_peminjaman' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_buku`.`judul`, `detail_transaksi`.`tanggal_peminjaman`, `detail_transaksi`.`tanggal_pengembalian`
+FROM `tbl_detail_transaksi`
+JOIN `tbl_buku` ON `tbl_buku`.`id_buku` = `detail_transaksi`.`id_buku`
+WHERE `id_transaksi` = \'16\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_buku`.`judul`, `detail_transaksi`.`tanggal_peminjaman`, `detail_transaksi`.`tanggal_pengembalian`
+FROM `tbl_detail_transaksi`
+JOIN `tbl_buku` ON `tbl_buku`.`id_buku` = `detail_transaksi`.`id_buku`
+WHERE `id_transaksi` = \'16\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_buku`.`judul`, `detail_transaksi`.`tanggal_peminjaman`, `detail_transaksi`.`tanggal_pengembalian`
+FROM `tbl_detail_transaksi`
+JOIN `tbl_buku` ON `tbl_buku`.`id_buku` = `detail_transaksi`.`id_buku`
+WHERE `id_transaksi` = \'16\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_buku`.`judul`, `detail_transaksi`.`tanggal_peminjaman`, `detail_transaksi`.`tanggal_pengembalian`
+FROM `tbl_detail_transaksi`
+JOIN `tbl_buku` ON `tbl_buku`.`id_buku` = `detail_transaksi`.`id_buku`
+WHERE `id_transaksi` = :id_transaksi:', [...], false)
+ 5 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\transaksiModels.php(64): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\admin\transaksi.php(144): App\Models\detailTransaksiModels->getDetailByTransaksi('16')
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\transaksi->detail('16')
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\transaksi))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-21 19:41:55 --> mysqli_sql_exception: Unknown column 'tbl_transaksi.tanggal_peminjaman' in 'field list' in C:\xampp\htdocs\si-perpus\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\si-perpus\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_buk...', 0)
+#1 C:\xampp\htdocs\si-perpus\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_buk...')
+#2 C:\xampp\htdocs\si-perpus\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_buk...')
+#3 C:\xampp\htdocs\si-perpus\system\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_buk...', Array, false)
+#4 C:\xampp\htdocs\si-perpus\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\si-perpus\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\si-perpus\app\Models\transaksiModels.php(64): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\si-perpus\app\Controllers\admin\transaksi.php(144): App\Models\detailTransaksiModels->getDetailByTransaksi('16')
+#8 C:\xampp\htdocs\si-perpus\system\CodeIgniter.php(941): App\Controllers\admin\transaksi->detail('16')
+#9 C:\xampp\htdocs\si-perpus\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\transaksi))
+#10 C:\xampp\htdocs\si-perpus\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\si-perpus\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-05-21 19:41:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tbl_transaksi.tanggal_peminjaman' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_buku`.`judul`, `tbl_transaksi`.`tanggal_peminjaman`, `tbl_transaksi`.`tanggal_pengembalian`
+FROM `tbl_detail_transaksi`
+JOIN `tbl_buku` ON `tbl_buku`.`id_buku` = `detail_transaksi`.`id_buku`
+WHERE `id_transaksi` = :id_transaksi:', [...], false)
+ 2 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\transaksiModels.php(64): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\admin\transaksi.php(144): App\Models\detailTransaksiModels->getDetailByTransaksi('16')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\transaksi->detail('16')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-21 19:41:55 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tbl_transaksi.tanggal_peminjaman' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_buku`.`judul`, `tbl_transaksi`.`tanggal_peminjaman`, `tbl_transaksi`.`tanggal_pengembalian`
+FROM `tbl_detail_transaksi`
+JOIN `tbl_buku` ON `tbl_buku`.`id_buku` = `detail_transaksi`.`id_buku`
+WHERE `id_transaksi` = \'16\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_buku`.`judul`, `tbl_transaksi`.`tanggal_peminjaman`, `tbl_transaksi`.`tanggal_pengembalian`
+FROM `tbl_detail_transaksi`
+JOIN `tbl_buku` ON `tbl_buku`.`id_buku` = `detail_transaksi`.`id_buku`
+WHERE `id_transaksi` = \'16\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_buku`.`judul`, `tbl_transaksi`.`tanggal_peminjaman`, `tbl_transaksi`.`tanggal_pengembalian`
+FROM `tbl_detail_transaksi`
+JOIN `tbl_buku` ON `tbl_buku`.`id_buku` = `detail_transaksi`.`id_buku`
+WHERE `id_transaksi` = :id_transaksi:', [...], false)
+ 4 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\transaksiModels.php(64): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\admin\transaksi.php(144): App\Models\detailTransaksiModels->getDetailByTransaksi('16')
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\transaksi->detail('16')
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\transaksi))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-21 19:41:55 --> [Caused by] mysqli_sql_exception: Unknown column 'tbl_transaksi.tanggal_peminjaman' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_buku`.`judul`, `tbl_transaksi`.`tanggal_peminjaman`, `tbl_transaksi`.`tanggal_pengembalian`
+FROM `tbl_detail_transaksi`
+JOIN `tbl_buku` ON `tbl_buku`.`id_buku` = `detail_transaksi`.`id_buku`
+WHERE `id_transaksi` = \'16\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_buku`.`judul`, `tbl_transaksi`.`tanggal_peminjaman`, `tbl_transaksi`.`tanggal_pengembalian`
+FROM `tbl_detail_transaksi`
+JOIN `tbl_buku` ON `tbl_buku`.`id_buku` = `detail_transaksi`.`id_buku`
+WHERE `id_transaksi` = \'16\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_buku`.`judul`, `tbl_transaksi`.`tanggal_peminjaman`, `tbl_transaksi`.`tanggal_pengembalian`
+FROM `tbl_detail_transaksi`
+JOIN `tbl_buku` ON `tbl_buku`.`id_buku` = `detail_transaksi`.`id_buku`
+WHERE `id_transaksi` = \'16\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_buku`.`judul`, `tbl_transaksi`.`tanggal_peminjaman`, `tbl_transaksi`.`tanggal_pengembalian`
+FROM `tbl_detail_transaksi`
+JOIN `tbl_buku` ON `tbl_buku`.`id_buku` = `detail_transaksi`.`id_buku`
+WHERE `id_transaksi` = :id_transaksi:', [...], false)
+ 5 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\transaksiModels.php(64): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\admin\transaksi.php(144): App\Models\detailTransaksiModels->getDetailByTransaksi('16')
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\transaksi->detail('16')
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\transaksi))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-05-21 19:43:27 --> mysqli_sql_exception: Column 'id_transaksi' in where clause is ambiguous in C:\xampp\htdocs\si-perpus\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\si-perpus\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_buk...', 0)
+#1 C:\xampp\htdocs\si-perpus\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_buk...')
+#2 C:\xampp\htdocs\si-perpus\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_buk...')
+#3 C:\xampp\htdocs\si-perpus\system\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_buk...', Array, false)
+#4 C:\xampp\htdocs\si-perpus\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\si-perpus\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\si-perpus\app\Models\transaksiModels.php(65): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\si-perpus\app\Controllers\admin\transaksi.php(144): App\Models\detailTransaksiModels->getDetailByTransaksi('16')
+#8 C:\xampp\htdocs\si-perpus\system\CodeIgniter.php(941): App\Controllers\admin\transaksi->detail('16')
+#9 C:\xampp\htdocs\si-perpus\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\transaksi))
+#10 C:\xampp\htdocs\si-perpus\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\si-perpus\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-05-21 19:43:27 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'id_transaksi' in where clause is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_buku`.`judul`, `tbl_transaksi`.`tanggal_peminjaman`, `tbl_transaksi`.`tanggal_pengembalian`
+FROM `tbl_detail_transaksi`
+JOIN `tbl_transaksi` ON `tbl_transaksi`.`id_transaksi` = `tbl_detail_transaksi`.`id_transaksi`
+JOIN `tbl_buku` ON `tbl_buku`.`id_buku` = `tbl_detail_transaksi`.`id_buku`
+WHERE `id_transaksi` = :id_transaksi:', [...], false)
+ 2 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\transaksiModels.php(65): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\admin\transaksi.php(144): App\Models\detailTransaksiModels->getDetailByTransaksi('16')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\transaksi->detail('16')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-21 19:43:27 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'id_transaksi' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_buku`.`judul`, `tbl_transaksi`.`tanggal_peminjaman`, `tbl_transaksi`.`tanggal_pengembalian`
+FROM `tbl_detail_transaksi`
+JOIN `tbl_transaksi` ON `tbl_transaksi`.`id_transaksi` = `tbl_detail_transaksi`.`id_transaksi`
+JOIN `tbl_buku` ON `tbl_buku`.`id_buku` = `tbl_detail_transaksi`.`id_buku`
+WHERE `id_transaksi` = \'16\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_buku`.`judul`, `tbl_transaksi`.`tanggal_peminjaman`, `tbl_transaksi`.`tanggal_pengembalian`
+FROM `tbl_detail_transaksi`
+JOIN `tbl_transaksi` ON `tbl_transaksi`.`id_transaksi` = `tbl_detail_transaksi`.`id_transaksi`
+JOIN `tbl_buku` ON `tbl_buku`.`id_buku` = `tbl_detail_transaksi`.`id_buku`
+WHERE `id_transaksi` = \'16\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_buku`.`judul`, `tbl_transaksi`.`tanggal_peminjaman`, `tbl_transaksi`.`tanggal_pengembalian`
+FROM `tbl_detail_transaksi`
+JOIN `tbl_transaksi` ON `tbl_transaksi`.`id_transaksi` = `tbl_detail_transaksi`.`id_transaksi`
+JOIN `tbl_buku` ON `tbl_buku`.`id_buku` = `tbl_detail_transaksi`.`id_buku`
+WHERE `id_transaksi` = :id_transaksi:', [...], false)
+ 4 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\transaksiModels.php(65): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\admin\transaksi.php(144): App\Models\detailTransaksiModels->getDetailByTransaksi('16')
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\transaksi->detail('16')
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\transaksi))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-21 19:43:27 --> [Caused by] mysqli_sql_exception: Column 'id_transaksi' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_buku`.`judul`, `tbl_transaksi`.`tanggal_peminjaman`, `tbl_transaksi`.`tanggal_pengembalian`
+FROM `tbl_detail_transaksi`
+JOIN `tbl_transaksi` ON `tbl_transaksi`.`id_transaksi` = `tbl_detail_transaksi`.`id_transaksi`
+JOIN `tbl_buku` ON `tbl_buku`.`id_buku` = `tbl_detail_transaksi`.`id_buku`
+WHERE `id_transaksi` = \'16\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_buku`.`judul`, `tbl_transaksi`.`tanggal_peminjaman`, `tbl_transaksi`.`tanggal_pengembalian`
+FROM `tbl_detail_transaksi`
+JOIN `tbl_transaksi` ON `tbl_transaksi`.`id_transaksi` = `tbl_detail_transaksi`.`id_transaksi`
+JOIN `tbl_buku` ON `tbl_buku`.`id_buku` = `tbl_detail_transaksi`.`id_buku`
+WHERE `id_transaksi` = \'16\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_buku`.`judul`, `tbl_transaksi`.`tanggal_peminjaman`, `tbl_transaksi`.`tanggal_pengembalian`
+FROM `tbl_detail_transaksi`
+JOIN `tbl_transaksi` ON `tbl_transaksi`.`id_transaksi` = `tbl_detail_transaksi`.`id_transaksi`
+JOIN `tbl_buku` ON `tbl_buku`.`id_buku` = `tbl_detail_transaksi`.`id_buku`
+WHERE `id_transaksi` = \'16\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1613): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_buku`.`judul`, `tbl_transaksi`.`tanggal_peminjaman`, `tbl_transaksi`.`tanggal_pengembalian`
+FROM `tbl_detail_transaksi`
+JOIN `tbl_transaksi` ON `tbl_transaksi`.`id_transaksi` = `tbl_detail_transaksi`.`id_transaksi`
+JOIN `tbl_buku` ON `tbl_buku`.`id_buku` = `tbl_detail_transaksi`.`id_buku`
+WHERE `id_transaksi` = :id_transaksi:', [...], false)
+ 5 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\transaksiModels.php(65): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\admin\transaksi.php(144): App\Models\detailTransaksiModels->getDetailByTransaksi('16')
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\transaksi->detail('16')
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\transaksi))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-21 19:43:43 --> ErrorException: Trying to get property 'judul' of non-object
+in APPPATH\Views\pages\backend\transaksi\detail.php on line 32.
+ 1 APPPATH\Views\pages\backend\transaksi\detail.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'judul\' of non-object', 'C:\\xampp\\htdocs\\si-perpus\\app\\Views\\pages\\backend\\transaksi\\detail.php', 32, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\si-perpus\\app\\Views\\pages\\backend\\transaksi\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/backend/transaksi/detail', [], true)
+ 5 APPPATH\Controllers\admin\transaksi.php(153): view('pages/backend/transaksi/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\transaksi->detail('16')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-21 19:48:28 --> ArgumentCountError: Too few arguments to function App\Controllers\admin\transaksi::detail(), 0 passed in C:\xampp\htdocs\si-perpus\system\CodeIgniter.php on line 941 and exactly 1 expected
+in APPPATH\Controllers\admin\transaksi.php on line 141.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\transaksi->detail()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\transaksi))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-21 19:49:04 --> ArgumentCountError: Too few arguments to function App\Controllers\admin\transaksi::detail(), 0 passed in C:\xampp\htdocs\si-perpus\system\CodeIgniter.php on line 941 and exactly 1 expected
+in APPPATH\Controllers\admin\transaksi.php on line 141.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\transaksi->detail()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\transaksi))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-21 19:53:28 --> Error: Class 'App\Models\detailTransaksiModels' not found
+in APPPATH\Controllers\admin\transaksi.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\admin\transaksi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-21 19:53:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-21 19:55:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-21 20:01:36 --> mysqli_sql_exception: Unknown column 'status_peminjaman' in 'field list' in C:\xampp\htdocs\si-perpus\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\si-perpus\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\si-perpus\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\si-perpus\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\si-perpus\system\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\si-perpus\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\si-perpus\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\si-perpus\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\si-perpus\system\BaseModel.php(713): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\si-perpus\app\Controllers\admin\transaksi.php(50): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\si-perpus\system\CodeIgniter.php(941): App\Controllers\admin\transaksi->simpan()
+#10 C:\xampp\htdocs\si-perpus\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\transaksi))
+#11 C:\xampp\htdocs\si-perpus\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\si-perpus\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-05-21 20:01:36 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'status_peminjaman' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_transaksi` (`id_anggota`, `tanggal_peminjaman`, `tanggal_pengembalian`, `status_peminjaman`) VALUES (:id_anggota:, :tanggal_peminjaman:, :tanggal_pengembalian:, :status_peminjaman:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\admin\transaksi.php(50): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\transaksi->simpan()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\transaksi))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-21 20:01:36 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'status_peminjaman' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_transaksi` (`id_anggota`, `tanggal_peminjaman`, `tanggal_pengembalian`, `status_peminjaman`) VALUES (\'9\', \'2024-05-14\', \'2024-05-20\', \'dipinjam\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_transaksi` (`id_anggota`, `tanggal_peminjaman`, `tanggal_pengembalian`, `status_peminjaman`) VALUES (\'9\', \'2024-05-14\', \'2024-05-20\', \'dipinjam\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_transaksi` (`id_anggota`, `tanggal_peminjaman`, `tanggal_pengembalian`, `status_peminjaman`) VALUES (:id_anggota:, :tanggal_peminjaman:, :tanggal_pengembalian:, :status_peminjaman:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\admin\transaksi.php(50): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\transaksi->simpan()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\transaksi))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-21 20:01:36 --> [Caused by] mysqli_sql_exception: Unknown column 'status_peminjaman' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tbl_transaksi` (`id_anggota`, `tanggal_peminjaman`, `tanggal_pengembalian`, `status_peminjaman`) VALUES (\'9\', \'2024-05-14\', \'2024-05-20\', \'dipinjam\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_transaksi` (`id_anggota`, `tanggal_peminjaman`, `tanggal_pengembalian`, `status_peminjaman`) VALUES (\'9\', \'2024-05-14\', \'2024-05-20\', \'dipinjam\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_transaksi` (`id_anggota`, `tanggal_peminjaman`, `tanggal_pengembalian`, `status_peminjaman`) VALUES (\'9\', \'2024-05-14\', \'2024-05-20\', \'dipinjam\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2302): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_transaksi` (`id_anggota`, `tanggal_peminjaman`, `tanggal_pengembalian`, `status_peminjaman`) VALUES (:id_anggota:, :tanggal_peminjaman:, :tanggal_pengembalian:, :status_peminjaman:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\admin\transaksi.php(50): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\admin\transaksi->simpan()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\transaksi))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-21 20:02:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-21 20:02:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

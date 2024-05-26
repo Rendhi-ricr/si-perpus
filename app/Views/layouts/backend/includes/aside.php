@@ -2,7 +2,7 @@
     <!-- Sidebar - Brand -->
     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
         <div class="sidebar-brand-icon rotate-n-15">
-            <img src="<?php echo (base_url()) ?>img/logoperpus.png" alt="" srcset="" width="50">
+            <img src="<?php echo base_url() ?>img/logoperpus.png" alt="" srcset="" width="50">
         </div>
         <div class="sidebar-brand-text mx-3">Perpustakaan</div>
     </a>
@@ -33,9 +33,7 @@
         </a>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-
                 <a class="collapse-item" href="<?= base_url('admin/anggota') ?>">Data Anggota</a>
-
             </div>
         </div>
     </li>
@@ -48,7 +46,6 @@
         </a>
         <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-
                 <a class="collapse-item" href="<?= base_url('admin/buku') ?>">Data Buku</a>
                 <a class="collapse-item" href="<?= base_url('admin/kategori') ?>">Data Kategori</a>
                 <a class="collapse-item" href="<?= base_url('admin/rak') ?>">Data Rak</a>
@@ -67,10 +64,8 @@
         </a>
         <div id="dt" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-
-                <a class="collapse-item" href="<?= base_url('admin/transaksi') ?>">
-                    Transaksi</a>
-                <a class="collapse-item" href="<?= base_url('admin/pengembalian') ?>">Histori Transaksi</a>
+                <a class="collapse-item" href="<?= base_url('admin/transaksi') ?>">Transaksi</a>
+                <a class="collapse-item" href="<?= base_url('admin/historiTransaksi') ?>">Histori Transaksi</a>
             </div>
         </div>
     </li>
@@ -84,40 +79,29 @@
     </div>
 
     <!-- Nav Item - Pages Collapse Menu -->
-
-
-    <!-- Nav Item - Charts -->
     <li class="nav-item">
         <a class="nav-link" href="<?= base_url('admin/denda') ?>">
             <i class="fas fad fa-dollar-sign"></i>
             <span>Denda</span></a>
     </li>
 
-
     <!-- Divider -->
-
-
     <hr class="sidebar-divider d-none d-md-block">
     <div class="sidebar-heading">
         Petugas/Operator
     </div>
 
     <!-- Nav Item - Pages Collapse Menu -->
-
-
-    <!-- Nav Item - Charts -->
-    <li class="nav-item">
-        <a class="nav-link" href="<?= base_url('admin/petugas') ?>">
-            <i class="fas fad fa-user-tie"></i>
-            <span>Petugas</span></a>
-    </li>
-
+    <?php if (session()->get('role') == 'admin') : ?>
+        <li class="nav-item">
+            <a class="nav-link" href="<?= base_url('admin/petugas') ?>">
+                <i class="fas fad fa-user-tie"></i>
+                <span>Petugas</span></a>
+        </li>
+    <?php endif; ?>
 
     <!-- Sidebar Toggler (Sidebar) -->
     <div class="text-center d-none d-md-inline">
         <button class="rounded-circle border-0" id="sidebarToggle"></button>
     </div>
-
-
-
 </ul>
