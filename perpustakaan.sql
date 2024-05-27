@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 26, 2024 at 08:56 PM
+-- Generation Time: May 27, 2024 at 11:06 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 7.4.33
 
@@ -111,9 +111,11 @@ CREATE TABLE `tbl_detail_transaksi` (
 --
 
 INSERT INTO `tbl_detail_transaksi` (`id_detail_transaksi`, `id_transaksi`, `id_buku`) VALUES
-(4, 19, 21),
-(5, 20, 18),
-(6, 20, 19);
+(13, 23, 19),
+(14, 23, 39),
+(18, 24, 18),
+(19, 24, 19),
+(20, 24, 39);
 
 -- --------------------------------------------------------
 
@@ -132,7 +134,10 @@ CREATE TABLE `tbl_histori_detail_transaksi` (
 --
 
 INSERT INTO `tbl_histori_detail_transaksi` (`id_histori_detail_transaksi`, `id_histori_transaksi`, `id_buku`) VALUES
-(23, 12, 20);
+(23, 12, 20),
+(24, 13, 21),
+(25, 14, 18),
+(26, 14, 19);
 
 -- --------------------------------------------------------
 
@@ -152,7 +157,9 @@ CREATE TABLE `tbl_histori_transaksi` (
 --
 
 INSERT INTO `tbl_histori_transaksi` (`id_histori_transaksi`, `id_anggota`, `tanggal_peminjaman`, `tanggal_pengembalian`) VALUES
-(12, 4, '2024-05-02', '2024-05-18');
+(12, 4, '2024-05-02', '2024-05-18'),
+(13, 9, '2024-05-14', '2024-05-20'),
+(14, 4, '2024-05-21', '2024-05-24');
 
 -- --------------------------------------------------------
 
@@ -234,8 +241,8 @@ CREATE TABLE `tbl_transaksi` (
 --
 
 INSERT INTO `tbl_transaksi` (`id_transaksi`, `id_anggota`, `tanggal_peminjaman`, `tanggal_pengembalian`, `status`) VALUES
-(19, 9, '2024-05-14', '2024-05-20', 'belum selesai'),
-(20, 4, '2024-05-21', '2024-05-24', 'belum selesai');
+(23, 9, '2024-05-26', '2024-05-27', 'selesai'),
+(24, 4, '2024-05-21', '2024-05-24', 'selesai');
 
 -- --------------------------------------------------------
 
@@ -256,10 +263,7 @@ CREATE TABLE `tbl_user` (
 --
 
 INSERT INTO `tbl_user` (`id_user`, `nama_lengkap`, `password`, `email`, `level`) VALUES
-(1, 'rendhi', '$2y$10$jKxh4HdUdAjn6RUIa8g1xu4me1ZV17VoMJfVdp5wj6wQpKV6J4gV.', 'rendhi@gmail.com', 0),
-(2, 'rendhi', '$2y$10$AOPYnzomez66ZaoRy9Uv8.OPXELKNGkXehC.QGnLH/aM4TovT/F3e', 'rendhi@gmail.com', 0),
-(3, 'rendhi1', '$2y$10$FfN3Z3BEKzgmf9P8ztmOcez6E5ZgStuw1jGlGFaPqkMTLAVBU5d32', 'rendhi@gmail.com', 0),
-(4, 'rendhi1', '$2y$10$HL20NBXlRWAEkbyNkrzAMuKgivOKDQylK0uKxIPgqHQ2k.lvoZX5W', 'rendhi@gmail.com', 0);
+(5, 'rendhi richardo', '$2y$10$rk2LZFymv4b6oaoFdjopzey8Nrnh0wHuufOLGnP.P4TTz01jZaAbq', 'admin@123', 1);
 
 --
 -- Indexes for dumped tables
@@ -366,19 +370,19 @@ ALTER TABLE `tbl_denda`
 -- AUTO_INCREMENT for table `tbl_detail_transaksi`
 --
 ALTER TABLE `tbl_detail_transaksi`
-  MODIFY `id_detail_transaksi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id_detail_transaksi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT for table `tbl_histori_detail_transaksi`
 --
 ALTER TABLE `tbl_histori_detail_transaksi`
-  MODIFY `id_histori_detail_transaksi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `id_histori_detail_transaksi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
 -- AUTO_INCREMENT for table `tbl_histori_transaksi`
 --
 ALTER TABLE `tbl_histori_transaksi`
-  MODIFY `id_histori_transaksi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id_histori_transaksi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `tbl_kategori`
@@ -402,13 +406,13 @@ ALTER TABLE `tbl_rak`
 -- AUTO_INCREMENT for table `tbl_transaksi`
 --
 ALTER TABLE `tbl_transaksi`
-  MODIFY `id_transaksi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id_transaksi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT for table `tbl_user`
 --
 ALTER TABLE `tbl_user`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- Constraints for dumped tables
