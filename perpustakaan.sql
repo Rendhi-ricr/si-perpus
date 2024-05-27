@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 21, 2024 at 02:28 PM
+-- Generation Time: May 26, 2024 at 08:56 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 7.4.33
 
@@ -97,6 +97,66 @@ INSERT INTO `tbl_denda` (`id_denda`, `denda`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `tbl_detail_transaksi`
+--
+
+CREATE TABLE `tbl_detail_transaksi` (
+  `id_detail_transaksi` int(11) NOT NULL,
+  `id_transaksi` int(11) NOT NULL,
+  `id_buku` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `tbl_detail_transaksi`
+--
+
+INSERT INTO `tbl_detail_transaksi` (`id_detail_transaksi`, `id_transaksi`, `id_buku`) VALUES
+(4, 19, 21),
+(5, 20, 18),
+(6, 20, 19);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_histori_detail_transaksi`
+--
+
+CREATE TABLE `tbl_histori_detail_transaksi` (
+  `id_histori_detail_transaksi` int(11) NOT NULL,
+  `id_histori_transaksi` int(11) NOT NULL,
+  `id_buku` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `tbl_histori_detail_transaksi`
+--
+
+INSERT INTO `tbl_histori_detail_transaksi` (`id_histori_detail_transaksi`, `id_histori_transaksi`, `id_buku`) VALUES
+(23, 12, 20);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_histori_transaksi`
+--
+
+CREATE TABLE `tbl_histori_transaksi` (
+  `id_histori_transaksi` int(11) NOT NULL,
+  `id_anggota` int(11) NOT NULL,
+  `tanggal_peminjaman` date NOT NULL,
+  `tanggal_pengembalian` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `tbl_histori_transaksi`
+--
+
+INSERT INTO `tbl_histori_transaksi` (`id_histori_transaksi`, `id_anggota`, `tanggal_peminjaman`, `tanggal_pengembalian`) VALUES
+(12, 4, '2024-05-02', '2024-05-18');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `tbl_kategori`
 --
 
@@ -113,34 +173,6 @@ INSERT INTO `tbl_kategori` (`id_kategori`, `nama_kategori`) VALUES
 (8, 'Pemrograman dasar'),
 (9, 'Pemrograman Menengah'),
 (10, 'Pemrograman Tingkat Lanjut');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `tbl_pengembalian`
---
-
-CREATE TABLE `tbl_pengembalian` (
-  `id_pengembalian` int(11) NOT NULL,
-  `id_anggota` int(11) NOT NULL,
-  `id_buku` int(11) NOT NULL,
-  `tanggal_peminjaman` date NOT NULL,
-  `tanggal_pengembalian` date NOT NULL,
-  `tanggal_dikembalikan` date NOT NULL,
-  `telat` int(11) NOT NULL,
-  `id_denda` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `tbl_pengembalian`
---
-
-INSERT INTO `tbl_pengembalian` (`id_pengembalian`, `id_anggota`, `id_buku`, `tanggal_peminjaman`, `tanggal_pengembalian`, `tanggal_dikembalikan`, `telat`, `id_denda`) VALUES
-(8, 4, 18, '2024-05-01', '2024-05-07', '2024-05-14', 7, 0),
-(9, 9, 19, '2024-05-02', '2024-05-05', '2024-05-14', 9, 0),
-(10, 4, 20, '2024-05-13', '2024-05-14', '2024-05-15', 1, 0),
-(11, 4, 19, '2024-05-13', '2024-05-14', '2024-05-15', 1, 0),
-(12, 9, 18, '2024-05-13', '2024-05-14', '2024-05-15', 1, 0);
 
 -- --------------------------------------------------------
 
@@ -192,18 +224,42 @@ INSERT INTO `tbl_rak` (`id_rak`, `nama_rak`) VALUES
 CREATE TABLE `tbl_transaksi` (
   `id_transaksi` int(11) NOT NULL,
   `id_anggota` int(11) NOT NULL,
-  `id_buku` int(11) NOT NULL,
   `tanggal_peminjaman` date NOT NULL,
-  `tanggal_pengembalian` date NOT NULL
+  `tanggal_pengembalian` date NOT NULL,
+  `status` enum('selesai','belum selesai') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `tbl_transaksi`
 --
 
-INSERT INTO `tbl_transaksi` (`id_transaksi`, `id_anggota`, `id_buku`, `tanggal_peminjaman`, `tanggal_pengembalian`) VALUES
-(13, 4, 18, '2024-05-15', '2024-05-16'),
-(14, 4, 18, '2024-05-15', '2024-05-14');
+INSERT INTO `tbl_transaksi` (`id_transaksi`, `id_anggota`, `tanggal_peminjaman`, `tanggal_pengembalian`, `status`) VALUES
+(19, 9, '2024-05-14', '2024-05-20', 'belum selesai'),
+(20, 4, '2024-05-21', '2024-05-24', 'belum selesai');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_user`
+--
+
+CREATE TABLE `tbl_user` (
+  `id_user` int(11) NOT NULL,
+  `nama_lengkap` varchar(50) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `level` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `tbl_user`
+--
+
+INSERT INTO `tbl_user` (`id_user`, `nama_lengkap`, `password`, `email`, `level`) VALUES
+(1, 'rendhi', '$2y$10$jKxh4HdUdAjn6RUIa8g1xu4me1ZV17VoMJfVdp5wj6wQpKV6J4gV.', 'rendhi@gmail.com', 0),
+(2, 'rendhi', '$2y$10$AOPYnzomez66ZaoRy9Uv8.OPXELKNGkXehC.QGnLH/aM4TovT/F3e', 'rendhi@gmail.com', 0),
+(3, 'rendhi1', '$2y$10$FfN3Z3BEKzgmf9P8ztmOcez6E5ZgStuw1jGlGFaPqkMTLAVBU5d32', 'rendhi@gmail.com', 0),
+(4, 'rendhi1', '$2y$10$HL20NBXlRWAEkbyNkrzAMuKgivOKDQylK0uKxIPgqHQ2k.lvoZX5W', 'rendhi@gmail.com', 0);
 
 --
 -- Indexes for dumped tables
@@ -231,18 +287,33 @@ ALTER TABLE `tbl_denda`
   ADD PRIMARY KEY (`id_denda`);
 
 --
+-- Indexes for table `tbl_detail_transaksi`
+--
+ALTER TABLE `tbl_detail_transaksi`
+  ADD PRIMARY KEY (`id_detail_transaksi`),
+  ADD KEY `id_buku` (`id_buku`),
+  ADD KEY `tbl_detail_transaksi_ibfk_2` (`id_transaksi`);
+
+--
+-- Indexes for table `tbl_histori_detail_transaksi`
+--
+ALTER TABLE `tbl_histori_detail_transaksi`
+  ADD PRIMARY KEY (`id_histori_detail_transaksi`),
+  ADD KEY `id_histori_transaksi` (`id_histori_transaksi`),
+  ADD KEY `id_buku` (`id_buku`);
+
+--
+-- Indexes for table `tbl_histori_transaksi`
+--
+ALTER TABLE `tbl_histori_transaksi`
+  ADD PRIMARY KEY (`id_histori_transaksi`),
+  ADD KEY `id_anggota` (`id_anggota`);
+
+--
 -- Indexes for table `tbl_kategori`
 --
 ALTER TABLE `tbl_kategori`
   ADD PRIMARY KEY (`id_kategori`);
-
---
--- Indexes for table `tbl_pengembalian`
---
-ALTER TABLE `tbl_pengembalian`
-  ADD PRIMARY KEY (`id_pengembalian`),
-  ADD KEY `id_anggota` (`id_anggota`),
-  ADD KEY `id_buku` (`id_buku`);
 
 --
 -- Indexes for table `tbl_petugas`
@@ -260,7 +331,14 @@ ALTER TABLE `tbl_rak`
 -- Indexes for table `tbl_transaksi`
 --
 ALTER TABLE `tbl_transaksi`
-  ADD PRIMARY KEY (`id_transaksi`);
+  ADD PRIMARY KEY (`id_transaksi`),
+  ADD KEY `id_anggota` (`id_anggota`);
+
+--
+-- Indexes for table `tbl_user`
+--
+ALTER TABLE `tbl_user`
+  ADD PRIMARY KEY (`id_user`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -285,16 +363,28 @@ ALTER TABLE `tbl_denda`
   MODIFY `id_denda` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
+-- AUTO_INCREMENT for table `tbl_detail_transaksi`
+--
+ALTER TABLE `tbl_detail_transaksi`
+  MODIFY `id_detail_transaksi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+
+--
+-- AUTO_INCREMENT for table `tbl_histori_detail_transaksi`
+--
+ALTER TABLE `tbl_histori_detail_transaksi`
+  MODIFY `id_histori_detail_transaksi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+
+--
+-- AUTO_INCREMENT for table `tbl_histori_transaksi`
+--
+ALTER TABLE `tbl_histori_transaksi`
+  MODIFY `id_histori_transaksi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+
+--
 -- AUTO_INCREMENT for table `tbl_kategori`
 --
 ALTER TABLE `tbl_kategori`
   MODIFY `id_kategori` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
-
---
--- AUTO_INCREMENT for table `tbl_pengembalian`
---
-ALTER TABLE `tbl_pengembalian`
-  MODIFY `id_pengembalian` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `tbl_petugas`
@@ -312,7 +402,13 @@ ALTER TABLE `tbl_rak`
 -- AUTO_INCREMENT for table `tbl_transaksi`
 --
 ALTER TABLE `tbl_transaksi`
-  MODIFY `id_transaksi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id_transaksi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+
+--
+-- AUTO_INCREMENT for table `tbl_user`
+--
+ALTER TABLE `tbl_user`
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- Constraints for dumped tables
@@ -326,11 +422,30 @@ ALTER TABLE `tbl_buku`
   ADD CONSTRAINT `tbl_buku_ibfk_2` FOREIGN KEY (`id_rak`) REFERENCES `tbl_rak` (`id_rak`);
 
 --
--- Constraints for table `tbl_pengembalian`
+-- Constraints for table `tbl_detail_transaksi`
 --
-ALTER TABLE `tbl_pengembalian`
-  ADD CONSTRAINT `tbl_pengembalian_ibfk_1` FOREIGN KEY (`id_anggota`) REFERENCES `tbl_anggota` (`id_anggota`),
-  ADD CONSTRAINT `tbl_pengembalian_ibfk_2` FOREIGN KEY (`id_buku`) REFERENCES `tbl_buku` (`id_buku`);
+ALTER TABLE `tbl_detail_transaksi`
+  ADD CONSTRAINT `tbl_detail_transaksi_ibfk_1` FOREIGN KEY (`id_buku`) REFERENCES `tbl_buku` (`id_buku`),
+  ADD CONSTRAINT `tbl_detail_transaksi_ibfk_2` FOREIGN KEY (`id_transaksi`) REFERENCES `tbl_transaksi` (`id_transaksi`) ON DELETE CASCADE;
+
+--
+-- Constraints for table `tbl_histori_detail_transaksi`
+--
+ALTER TABLE `tbl_histori_detail_transaksi`
+  ADD CONSTRAINT `tbl_histori_detail_transaksi_ibfk_1` FOREIGN KEY (`id_histori_transaksi`) REFERENCES `tbl_histori_transaksi` (`id_histori_transaksi`),
+  ADD CONSTRAINT `tbl_histori_detail_transaksi_ibfk_2` FOREIGN KEY (`id_buku`) REFERENCES `tbl_buku` (`id_buku`);
+
+--
+-- Constraints for table `tbl_histori_transaksi`
+--
+ALTER TABLE `tbl_histori_transaksi`
+  ADD CONSTRAINT `tbl_histori_transaksi_ibfk_2` FOREIGN KEY (`id_anggota`) REFERENCES `tbl_anggota` (`id_anggota`);
+
+--
+-- Constraints for table `tbl_transaksi`
+--
+ALTER TABLE `tbl_transaksi`
+  ADD CONSTRAINT `tbl_transaksi_ibfk_1` FOREIGN KEY (`id_anggota`) REFERENCES `tbl_anggota` (`id_anggota`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
