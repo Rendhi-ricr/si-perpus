@@ -12,7 +12,13 @@ use App\Models\historiDetailTransaksiModels;
 
 class transaksi extends BaseController
 {
-    protected $transaksiModels, $anggotaModels, $bukuModels, $detailTransaksiModels, $db, $historiTransaksiModels, $historiDetailTransaksiModels;
+    protected $transaksiModels,
+        $anggotaModels,
+        $bukuModels,
+        $detailTransaksiModels,
+        $db,
+        $historiTransaksiModels,
+        $historiDetailTransaksiModels;
 
     public function __construct()
     {
@@ -31,6 +37,24 @@ class transaksi extends BaseController
         return view('pages/backend/transaksi', $data);
     }
 
+    public function detail($id_transaksi)
+    {
+        $transaksi = $this->transaksi->getTransaksiWithDetails($id_transaksi);
+        $detailTransaksi = $this->transaksi->getDetailByTransaksi($id_transaksi);
+
+        if ($transaksi) {
+            $data = [
+                'title' => 'Detail Transaksi',
+                'transaksi' => $transaksi,
+                'detailTransaksi' => $detailTransaksi,
+            ];
+
+            return view('pages/backend/transaksi/detail', $data);
+        } else {
+            return redirect()->to('admin/transaksi')->with('error', 'Transaksi tidak ditemukan.');
+        }
+    }
+
     public function tambah()
     {
         $data = [
@@ -39,6 +63,8 @@ class transaksi extends BaseController
         ];
         return view('pages/backend/transaksi/tambah', $data);
     }
+
+
 
     public function simpan()
     {
@@ -171,23 +197,7 @@ class transaksi extends BaseController
 
 
 
-    public function detail($id_transaksi)
-    {
-        $transaksi = $this->transaksi->getTransaksiWithDetails($id_transaksi);
-        $detailTransaksi = $this->transaksi->getDetailByTransaksi($id_transaksi);
 
-        if ($transaksi) {
-            $data = [
-                'title' => 'Detail Transaksi',
-                'transaksi' => $transaksi,
-                'detailTransaksi' => $detailTransaksi,
-            ];
-
-            return view('pages/backend/transaksi/detail', $data);
-        } else {
-            return redirect()->to('admin/transaksi')->with('error', 'Transaksi tidak ditemukan.');
-        }
-    }
     // public function edit($id_transaksi)
     // {
     //     $transaksi = $this->transaksi->find($id_transaksi);

@@ -44,26 +44,54 @@
 
                                             </div>
                                         <?php endif; ?>
+                                        <form action="<?= base_url('auth/login'); ?>" method="post">
+                                            <div class="form-group">
+                                                <input type="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address..." name="email" required>
 
-                                        <form class="user" action="" method="post">
-                                            <div class="form-group">
-                                                <input type="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address..." name="email">
                                             </div>
                                             <div class="form-group">
-                                                <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password" name="password">
+                                                <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password" name="password" required>
+
                                             </div>
-                                            <div class="form-group">
-                                                <div class="custom-control custom-checkbox small">
-                                                    <input type="checkbox" class="custom-control-input" id="customCheck">
-                                                    <label class="custom-control-label" for="customCheck">Remember
-                                                        Me</label>
-                                                </div>
-                                            </div>
-                                            <button type="submit" class="btn btn-primary btn-user btn-block" name="login" value="LOGIN">Login</button>
-                                            <button type="submit" class="btn btn-primary btn-user btn-block" name="login" value="Register">Register</button>
+
+                                            <button type="submit" class="btn btn-primary btn-user btn-block">Login</button>
+
+
+                                            <hr>
 
                                         </form>
 
+                                        <!-- <form method="post" action="" class="user container-login">
+                                            <div class="text-center mb-4">
+                                                <h1 class="h4 text-gray-900 mb-4 mt-2">Login</h1>
+                                            </div>
+
+
+                                            <div class="form-group">
+                                                <label for="nama_lengkap">Username</label>
+                                                <input type="text" id="nama_lengkap" name="nama_lengkap" class="form-control" placeholder="Masukkan nama lengkap" autocomplete="off" required>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="password">Password</label>
+                                                <div class="input-group">
+                                                    <input type="password" name="password" id="password" class="form-control" placeholder="Enter password" autocomplete="off" required>
+                                                    <div class="input-group-append">
+                                                        <button type="button" class="btn btn-outline-secondary" id="showPassword" onclick="togglePassword()">
+                                                            <i class="bi bi-eye-slash-fill"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <button name="submit" type="submit" class="btn btn-primary btn-block">Login</button>
+                                            </div>
+
+                                            <div class="text-center">
+                                                <p class="text-muted mb-0">Belum Punya Akun? <a href="<?= base_url('auth/tambah') ?>" class="text-danger">Daftar</a></p>
+                                            </div>
+                                        </form> -->
                                     </div>
                                 </div>
                             </div>

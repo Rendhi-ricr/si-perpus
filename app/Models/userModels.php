@@ -8,16 +8,11 @@ class userModels extends Model
 {
     protected $table = 'tbl_user';
     protected $primaryKey = 'id_user';
-    protected $allowedFields = ['username', 'password', 'role'];
+    protected $allowedFields = ['nama_lengkap', 'email', 'password'];
 
-
-    public function getUser($username)
+    // Fungsi untuk mendapatkan data user berdasarkan email
+    public function getUserByEmail($email)
     {
-        return $this->where('username', $username)->first();
-    }
-
-    public function countUsers()
-    {
-        return $this->countAllResults();
+        return $this->where('email', $email)->first();
     }
 }
